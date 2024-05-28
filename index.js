@@ -1,7 +1,6 @@
-let listaUsuarios = [];
-let verificarAlmacenamiento = localStorage.getItem('lista');
+let listaUsuarios = localStorage.getItem('lista');
 
-if(verificarAlmacenamiento){
+if(listaUsuarios){
     listaUsuarios = JSON.parse(verificarAlmacenamiento);
 }
 else{
