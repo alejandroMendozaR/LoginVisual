@@ -4,8 +4,6 @@ function iniciar(){
     let valorPassword = document.getElementById("RPass").value;
     let mensaje = "";
 
-    //trim: limpia espacios en blanco en la cadena
-
     for(let i=0; i<listaUsuarios.length; i++){
         if(listaUsuarios[i].usuario == valorUsuario.trim() && listaUsuarios[i].pass == valorPassword.trim()){
             mensaje = "OK";
